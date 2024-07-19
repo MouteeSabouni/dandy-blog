@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/jpeg" href="https://madewithlove.com/blog/content/images/size/w256h256/2023/02/mwl-logo-square.png">
+    <link rel="icon" type="image/jpeg" href="/images/dandy-logo.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
@@ -17,7 +17,7 @@
 </head>
 <body class="bg-soft-black">
     <div class="flex flex-col items-center mt-8">
-            <img class="h-30 w-40 mt-8 mb-8" src="/images/logo-madewithlove-white.svg">
+            <img class="h-30 w-40 mt-8 mb-8" src="/images/dandy-logo.png">
 
             <div class="w-3/4 mt-6">
                     <form method="POST" action="/posts">

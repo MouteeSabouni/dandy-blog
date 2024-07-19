@@ -6,7 +6,7 @@
         @if(count($post->tags) !== 0)
             <div class="flex-1">
                 @foreach($post->tags as $tag)
-                <a href="/posts-by-tag/{{ strtolower($tag->name) }}" class = "bg-red-200 hover:bg-white/25 rounded-xl font-bold transition-colors duration-300 mr-1.5 px-3 py-1 text-xs">
+                <a href="/posts-by-tag/{{ strtolower($tag->name) }}" class = "bg-dandy-orange opacity-80 hover:py-2 hover:animate-pulse rounded-xl font-bold transition-colors duration-300 mr-1.5 px-3 py-1 text-xs">
                     {{ ucwords($tag->name) }}
                 </a>
                 @endforeach
@@ -23,7 +23,7 @@
                 </p>
             </div>
             <div class="text-sm">
-                by<a class="mx-1 text-red-600 hover:underline" href="/posts-by-user/{{ $post->user->id }}">{{ $post->user->name }}</a>{{ $post->created_at->diffForHumans() }}
+                by<a class="mx-1 text-orange-600 hover:underline" href="/posts-by-user/{{ $post->user->id }}">{{ $post->user->name }}</a>{{ $post->created_at->diffForHumans() }}
             </div>
         </div>
     </div>

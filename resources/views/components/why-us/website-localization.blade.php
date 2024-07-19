@@ -1,10 +1,10 @@
-<div class="px-28 bg-black opacity-90 pt-12 pb-8">
+<div class="px-28 bg-soft-black pt-12 pb-8">
     <div class="flex text-white flex-col items-center items-center pb-10" style="font-size: 50px; font-weight: bold; letter-spacing: -0.1rem">
         Why Choose Us?
     </div>
     <div class="flex justify-between space-x-4">
         <div class="flex flex-col items-center">
-            <div style="font-size: 40px" class="rounded-full h-20 w-20 bg-blue-700 text-white flex justify-center items-center font-bold">
+            <div style="font-size: 40px" class="rounded-full h-20 w-20 bg-dandy-tail text-dandy-orange flex justify-center items-center font-bold">
                 1
             </div>
             <div class="text-white my-6 font-black" style="font-size: 30px">
@@ -17,7 +17,7 @@
 
         </div>
         <div class="flex flex-col items-center">
-            <div style="font-size: 40px" class="rounded-full h-20 w-20 bg-blue-700 text-white flex justify-center items-center font-bold">
+            <div style="font-size: 40px" class="rounded-full h-20 w-20 bg-dandy-tail text-dandy-orange flex justify-center items-center font-bold">
                 2
             </div>
             <div class="text-white my-6 font-black" style="font-size: 30px">
@@ -30,7 +30,7 @@
 
         </div>
         <div class="flex flex-col items-center">
-            <div style="font-size: 40px" class="rounded-full h-20 w-20 bg-blue-700 text-white flex justify-center items-center font-bold">
+            <div style="font-size: 40px" class="rounded-full h-20 w-20 bg-dandy-tail text-dandy-orange flex justify-center items-center font-bold">
                 3
             </div>
             <div class="text-white my-6 font-black" style="font-size: 30px">
@@ -43,7 +43,7 @@
 
         </div>
         <div class="flex flex-col items-center">
-            <div style="font-size: 40px" class="rounded-full h-20 w-20 bg-blue-700 text-white flex justify-center items-center font-bold">
+            <div style="font-size: 40px" class="rounded-full h-20 w-20 bg-dandy-tail text-dandy-orange flex justify-center items-center font-bold">
                 4
             </div>
             <div class="text-white my-6 font-black" style="font-size: 30px">

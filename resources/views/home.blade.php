@@ -7,12 +7,11 @@
     <x-slot:title>
         Home
     </x-slot:title>
-    <div class="mt-14">
-        <div style="background-image: url('/images/home-header.png')">
-            <div class="pt-14 ml-28 w-2/3 font-extrabold text-white"
-                style="font-size: 55px; height: 380px; line-height: 65px">
-                Translation brings the world together, making  communication between individuals much easier and much much faster.
-            </div>
+
+    <div class="py-24 px-28 w-full font-extrabold text-white bg-soft-black"
+        style="font-size: 55px; line-height: 65px">
+        <div class="px-10 text-center">
+            <span class="text-dandy-orange">Translation </span>brings the world together, making <span class="text-dandy-orange">communication</span> between individuals much easier and much much faster.
         </div>
     </div>
 
@@ -25,7 +24,7 @@
             </p>
             <div class="mt-6 text-xl font-medium">
                 @foreach ($clients as $client)
-                    <span class="{{ ($loop->iteration % 3 === 0) ? 'text-love-red' : 'text-white' }}">
+                    <span class="{{ ($loop->iteration % 3 === 0) ? 'text-dandy-orange' : 'text-white' }}">
                         {{ (!$loop->last) ? $client . ',' : $client }}
                     </span>
                 @endforeach
@@ -42,13 +41,13 @@
             @foreach($posts as $post)
             <div class="flex flex-col w-96">
                 <a href="/posts/{{ $post->id }}">
-                    <img src="/images/post-image.jpg" class="rounded-3xl w-full h-80 hover:scale-105" />
+                    <img src="/images/post-image.png" class="rounded-3xl w-full h-80 opacity-80 hover:scale-105 hover:animate-pulse" />
                 </a>
                 <x-posts.sm-card :$post />
             </div>
             @endforeach
     </div>
-    <div class="pt-12 px-28 bg-red-800 bg-opacity-80">
+    <div class="pt-12 px-28 bg-dandy-tail">
         <div class="flex flex-col items-center">
             <div>
                 <img src="/images/rkd.png" class="my-10 w-48 h-48">
@@ -60,7 +59,7 @@
                 <a href="https://madewithlove.com/team/roduan-kareem-aldeen/" class="rounded-2xl font-bold px-4 py-2 hover:scale-110 border border-white border-2" target="_blank">
                     Read his posts
                 </a>
-                <a href="https://www.linkedin.com/in/roduankd/" target="_blank" class="rounded-2xl font-bold px-4 py-2 bg-white text-red-800 hover:scale-110">
+                <a href="https://www.linkedin.com/in/roduankd/" target="_blank" class="rounded-2xl font-bold px-4 py-2 bg-white text-dandy-tail hover:scale-110">
                     Reach out
                 </a>
             </div>

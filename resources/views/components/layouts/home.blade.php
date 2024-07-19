@@ -6,41 +6,41 @@
         <title>{{ env('owner') }} — {{ $title ?? '' }}</title>
         @vite('resources/css/app.css')
         {{-- <title>Home Page</title> --}}
-        <link rel="icon" type="image/jpeg" href="https://madewithlove.com/blog/content/images/size/w256h256/2023/02/mwl-logo-square.png">
+        <link rel="icon" type="image/jpeg" href="/images/dandy-logo.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"></head>
 
-<body class="h-auto bg-love-red">
-    <div class="text-white">
-        <div class="mx-4 flex h-16 items-center justify-between">
+<body class="h-auto bg-dandy-tail">
+    <div class="text-white sticky top-0 z-10 bg-dandy-tail">
+        <div class="mx-8 flex h-16 items-center justify-between">
             <div class="flex items-center">
                 <div class="flex-shrink-0">
-                    <a href="/">
-                        <img class="h-30 w-40 ml-5" src="/images/logo-madewithlove-white.svg" alt="Your Company">
+                    <a href="/" class="flex items-center">
+                        <img class="h-12 w-12" src="/images/dandy-logo.png" alt="Your Company">
                     </a>
                 </div>
-                    <div class="hidden md:block">
-                        <div class="ml-9 flex items-end text-xl space-x-6">
-                            <x-nav-link href="#services" :active="request()->is('services')">What We Offer</x-nav-link>
-                            <x-nav-link href="#contact-us" :active="request()->is('contact')">Contact Us</x-nav-link>
-                            <x-nav-link href="/posts" :active="request()->is('posts')">Our Dandy Blog</x-nav-link>
-                        </div>
-                    </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-end text-xl space-x-5">
+                    <x-nav-link href="#services" :active="request()->is('services')">What We Offer</x-nav-link>
+                    <x-nav-link href="#contact-us" :active="request()->is('contact')">Contact Us</x-nav-link>
+                    <x-nav-link href="/posts" :active="request()->is('posts')">Our Dandy Blog</x-nav-link>
+                </div>
             </div>
 
-                    <div class="hidden md:block">
-                        <div class="mr-4 flex items-center md:ml-6 space-x-4">
-                            @guest
-                            <x-nav-link href="/register" :active="request()->is('register')">Register</x-nav-link>
-                            <x-nav-link href="/login" :active="request()->is('login')">Log in</x-nav-link>
-                            @endguest
+            <div class="hidden md:block">
+                <div class="mr-4 flex items-center md:ml-6 space-x-4">
+                    @guest
+                    <x-nav-link href="/register" :active="request()->is('register')">Register</x-nav-link>
+                    <x-nav-link href="/login" :active="request()->is('login')">Log in</x-nav-link>
+                    @endguest
 
-                            @auth
-                                <x-user-options />
-                            @endauth
-                        </div>
-                    </div>
+                    @auth
+                        <x-user-options />
+                    @endauth
+                </div>
+            </div>
         </div>
     </div>
     <div>

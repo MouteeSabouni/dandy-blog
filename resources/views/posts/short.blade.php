@@ -77,7 +77,7 @@
                     <form action="{{$post->path()}}/comments" method="POST">
                         @csrf
 
-                        <input class="rounded-full w-full bg-zinc-700 py-2 px-5 text-white placeholder:text-base placeholder:text-input-text sm:text-sm sm:leading-6 input-field" placeholder="Write your comment...">
+                        <input name="body" class="rounded-full w-full bg-zinc-700 py-2 px-5 text-white placeholder:text-base placeholder:text-input-text sm:text-sm sm:leading-6 input-field" placeholder="Write your comment...">
                     </form>
                 </div>
             </x-posts.panel>

@@ -9,7 +9,7 @@ use App\Http\Controllers\FinderController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\TagController;
 
-Route::get('/home', [FinderController::class, 'home'])->name('home');
+Route::get('/', [FinderController::class, 'home'])->name('home');
 Route::get('/services/{service}', [FinderController::class, 'loadServiceView'])->name('service');
 
 Route::middleware('auth')->group(function () {
@@ -31,7 +31,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/search', [FinderController::class, 'search'])->name('search');
 
     Route::patch('/users/{user}', [UserController::class, 'updateProfile'])->name('users.update-profile');
-    Route::delete('/users/{user}/delete', [UserController::class, 'destroy'])->name('users.destroy');
+    Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
     Route::patch('/users/{user}/password', [UserController::class, 'updatePassword'])->name('users.update-password');
     Route::get('/users/{user}', [UserController::class, 'show'])->name('users.show');
 });

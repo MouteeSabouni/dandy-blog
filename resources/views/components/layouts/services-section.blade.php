@@ -2,7 +2,7 @@
     HOW WE CAN ASSIST YOU
 </div>
 <div class="flex px-28 text-white space-x-4">
-    <a href="/services/website-localization" class="service-1 font-extrabold text-2xl hover:opacity-100" style="letter-spacing: -0.4px">
+    <a href="/services/website-localization" class="service-1 text-dandy-orange font-extrabold text-2xl hover:opacity-100" style="letter-spacing: -0.4px">
         Website Localization
     </a>
     <a href="/services/media-subtitling" class="service-2 font-extrabold text-2xl opacity-60 hover:opacity-100" style="letter-spacing: -0.4px">
@@ -45,7 +45,7 @@
 
 <button>
     <div class="px-28 mb-20">
-        <div class="flex text-white bg-black bg-opacity-50 hover:scale-110 hover:bg-opacity-75 w-fit px-4 py-2 transition-all rounded-3xl">
+        <div class="flex text-white bg-black bg-opacity-50 hover:scale-110 hover:bg-opacity-75 hover:border hover:border-dandy-orange w-fit px-4 py-2 transition-all rounded-3xl">
             <div class="flex items-center pr-4">
                 <img src="/images/phone.svg" class="w-7 h-7"/>
             </div>
@@ -71,10 +71,12 @@
                 numbers.forEach(function(otherNumber) {
                     document.querySelector(`.content-${otherNumber}`).classList.add('hidden');
                     document.querySelector(`.service-${otherNumber}`).classList.add('opacity-60');
+                    document.querySelector(`.service-${otherNumber}`).classList.remove('text-dandy-orange');
                 });
                 // Then, show the clicked content element
                 document.querySelector(`.content-${number}`).classList.remove('hidden');
                 document.querySelector(`.service-${number}`).classList.remove('opacity-60');
+                document.querySelector(`.service-${number}`).classList.add('text-dandy-orange');
             });
         });
     });
