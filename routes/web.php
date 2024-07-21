@@ -22,7 +22,7 @@ Route::middleware('auth')->group(function () {
     Route::get('short-posts', [PostController::class, 'getShort'])->name('posts.short');
     Route::get('featured-posts', [PostController::class, 'getFeatured'])->name('posts.featured');
     Route::get('posts-by-user/{user}', [PostController::class, 'getByUser'])->name('posts.by-user');
-    Route::get('posts-by-tag/{tag}', [PostController::class, 'getByTag'])->name('posts.by-tag');
+    Route::get('posts-by-tag/{tag:name}', [PostController::class, 'getByTag'])->name('posts.by-tag');
 
     Route::post('/posts/{post}/comments', [CommentController::class, 'store']);
     Route::patch('/posts/{post}/comments/{comment}', [CommentController::class, 'update']);

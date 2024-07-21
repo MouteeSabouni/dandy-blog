@@ -20,7 +20,7 @@
 </head>
 <body class="bg-soft-black">
     <div class="flex flex-col items-center mt-8">
-            <img class="h-30 w-40 mt-8 mb-8" src="/images/logo-madewithlove-white.svg">
+        <img class="h-20 w-20 mt-8" src="/images/dandy-logo.png">
 
             <div class="w-3/4 mt-6">
                     <form method="POST" action="{{ $post->path() }}">
@@ -85,7 +85,7 @@
 
                             <div class="flex flex-col items-center">
                                 <p class="text-input-text">
-                                    Changed your mind?<a href="javascript:history.back()" class="text-white ml-1">Go Back</a>
+                                    Changed your mind?<a href="javascript:history.back()" class="text-white ml-1 hover:underline">Go Back</a>
                                 </p>
                             </div>
                         </div>

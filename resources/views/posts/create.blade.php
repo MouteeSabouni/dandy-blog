@@ -17,7 +17,7 @@
 </head>
 <body class="bg-soft-black">
     <div class="flex flex-col items-center mt-8">
-            <img class="h-30 w-40 mt-8 mb-8" src="/images/dandy-logo.png">
+            <img class="h-20 w-20 mt-8" src="/images/dandy-logo.png">
 
             <div class="w-3/4 mt-6">
                     <form method="POST" action="/posts">
@@ -83,7 +83,7 @@
 
                             <div class="flex flex-col items-center">
                                 <p class="text-input-text">
-                                    Maybe later?<a href="/posts" class="text-white"> Go back to the blog page.</a>
+                                    Maybe later? <a href="/posts" class="text-white hover:underline">Go back to the blog page.</a>
                                 </p>
                             </div>
                         </div>

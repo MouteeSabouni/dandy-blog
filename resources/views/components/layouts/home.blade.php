@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"></head>
 
 <body class="h-auto bg-dandy-tail">
-    <div class="text-white sticky top-0 z-10 bg-dandy-tail">
+    <div class="text-white bg-dandy-tail">
         <div class="mx-8 flex h-16 items-center justify-between">
             <div class="flex items-center">
                 <div class="flex-shrink-0">

@@ -22,8 +22,8 @@
             <div class="mx-5 px-4">
                 <div class="flex h-16 items-center justify-between">
                     <div class="flex items-center">
-                            <a href="/home">
-                                <img class="h-30 w-40" src="/images/logo-madewithlove-white.svg" alt="Your Company">
+                            <a href="/">
+                                <img class="h-12 w-12" src="/images/dandy-logo.png" alt="Your Company">
                             </a>
 
                         <div class="hidden md:block">
@@ -53,7 +53,7 @@
                 </h1>
 
                 @auth
-                    <x-button class="bg-love-red" href="/posts/create">
+                    <x-button href="/posts/create">
                         Create a post
                     </x-button>
                 @endauth
