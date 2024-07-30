@@ -42,10 +42,10 @@
                         </div>
 
                         @error('email')
-                        <span class="mt-2" role="alert">
-                            <p class="text-red-600">{{ $message }}</p>
-                        </span>
-                    @enderror
+                            <span class="mt-2" role="alert">
+                                <p class="text-red-600">{{ $message }}</p>
+                            </span>
+                         @enderror
 
                         <div class="text-white flex flex-col items-center">
                             <x-forms.input
