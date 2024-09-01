@@ -61,7 +61,7 @@
 
                             <div class="text-white flex flex-col items-center">
                                 <textarea
-                                    rows = "4"
+                                    rows="4"
                                     class="block resize-none overflow-auto bg-input-bg py-3 px-5 text-white placeholder:text-base placeholder:text-input-text sm:text-sm sm:leading-6 w-1/2 rounded-3xl h-full"
                                     type="text"
                                     id="body"
